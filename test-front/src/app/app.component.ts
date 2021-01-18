@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'test-front';
+ 
+  //Modificables
+  public title = 'tajam';
+  public item: string = 'home';
+  public page: string = 'one';
+
+  // Cambia el estilo del navegador
+  change(item : string, page? : string) : void {
+
+    //Cambia de pagina en el navegador
+    this.item = item;
+
+    //Si cambio de pagina en el header
+    if(page){
+      this.page = page;
+    }
+  }
 }

@@ -1,1 +1,60 @@
+
 <router-outlet></router-outlet>
+
+<!-- Contenedor padre -->
+<div class="bodyHeader">
+
+  <!-- Cabecera -->
+  <div class="bodyChild">
+    <div class="row">
+
+      <!-- Seccion 1 del header - Logo -->
+        <a class="col-xs-12 col-md-3" style="text-align: center;" href="#">
+          <img class="logo" src="../assets/images/logo.png" alt="Home" title="Home">
+        </a>
+      <!-- Sección 2 del header Navegador -->
+      <div class="col-xs-12 col-md-9" style="text-align: right;">
+        <div class="sec2">
+          <ul>
+            <!-- Items -->
+            <li (click)="change('home')" [ngStyle]="item =='home' && {'color': '#05dfcf'}">HOME</li>
+            <li (click)="change('about')" [ngStyle]="item =='about' && {'color': '#05dfcf'}">ABOUT</li>
+            <li (click)="change('expertise')" [ngStyle]="item =='expertise' && {'color': '#05dfcf'}">EXPERTISE</li>
+            <li (click)="change('teams')" [ngStyle]="item =='teams' && {'color': '#05dfcf'}">TEAMS</li>
+            <li (click)="change('works')" [ngStyle]="item =='works' && {'color': '#05dfcf'}">WORKS</li>
+            <li (click)="change('people')" [ngStyle]="item =='people' && {'color': '#05dfcf'}">PEOPLE SAY</li>
+            <li (click)="change('concat')" [ngStyle]="item =='concat' && {'color': '#05dfcf'}">CONCAT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Curepo del header -->
+    <div class="content">
+      <div class="title">
+        We Are Awesome Creative Agence
+      </div>
+
+        <!-- separador -->
+      <hr class="line">
+
+        <!-- Parrafo -->
+      <p class="txt">This is Photoshop's version of Loren Ipsun. Proin gravida nibh vel velit auctor aliquet. Aenean solicitudin, loren <br> 
+        quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate <br>
+        cursus a sit amet mauris. Morbi accumsan ipsum velit.
+      </p>
+
+      <!-- Botón leer más -->
+      <button type="button" class="btn btn-light morebtn">LEARN MORE</button>
+
+      <!-- scroll incons -->
+      <div style="margin-bottom: 35px;">
+        <i class="far fa-circle iconScroll" (click)="change(item,'one')" [ngStyle]="page =='one' && {'background': '#05dfcf'}"></i>
+        <i class="far fa-circle iconScroll" (click)="change(item,'two')" [ngStyle]="page =='two' && {'background-color': '#05dfcf'}"></i>
+        <i class="far fa-circle iconScroll" (click)="change(item,'three')" [ngStyle]="page =='three' && {'background-color': '#05dfcf'}"></i>
+        <i class="far fa-circle iconScroll" (click)="change(item, 'four')" [ngStyle]="page =='four' && {'background-color': '#05dfcf'}"></i>
+      </div>
+      
+
+    </div>
+  </div>
+</div>

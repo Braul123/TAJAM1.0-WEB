@@ -1,0 +1,109 @@
+//Tipografía
+$font-family: 'Times New Roman', Times, serif;
+
+//Clases de estilo para responsive
+@media (max-width : 600px){
+
+    .bodyHeader{
+        width: auto;
+        position: fixed !important;
+    }
+
+    .bodyChild{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .sec2 ul{
+        text-align: center !important;
+    }
+
+}
+  
+//Estilo para el logo
+.logo{
+    border-radius: 25px;
+    height: 50px;
+}
+
+// Cuerpo de cabecera
+.bodyHeader {
+    background-image: url('../assets/images/fondo.jpg'); 
+    position: absolute; 
+    width: 100%;
+}
+
+//cuerpo del header
+.bodyChild{
+    margin-top: 20px;
+    left: 300px;
+    right: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+//Seccion 2 del header - Navegación
+.sec2 ul{
+    list-style: none;
+    margin: 18px;
+}
+.sec2 ul li{
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.content{
+    text-align: center;
+    margin-top: 70px;
+   
+}
+
+.title{
+    
+    font-weight: bold;
+    font-size: 29px;
+    color: white;
+    font-family: $font-family;
+}
+
+//Separador
+.line{
+    width: 65px !important;
+    border: solid 1px;
+    color: #05dfcf;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+// parrafo
+.txt{
+    color: white;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    font-family: $font-family;
+}
+
+//BVotón leer mas 
+.morebtn{
+    background: #00ffff00;
+    border-radius: 2px;
+    border-color:  #05dfcf;
+    color:  #05dfcf;
+    font-weight: bold;
+    margin-bottom: 105px;
+}
+
+.iconScroll{
+    margin-right: 7px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #c1c1dc;
+}
+
+
+
