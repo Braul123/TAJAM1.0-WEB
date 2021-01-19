@@ -14,7 +14,8 @@ export class AppComponent {
   public page: string = 'one';
   public isMessage : boolean = false;
   public usuarioForm: FormGroup;
-  public privacity: string = 'Copyright © 2015 - Tajem Creative'
+  public privacity: string = 'Copyright © 2015 - Tajem Creative';
+
   ngOnInit(): void {
     //Crea el formulario de validación y obtiene todos los usuarios administrativo 
     this.generarFormGroup();
@@ -35,7 +36,7 @@ export class AppComponent {
   });
 
 }
-  // Cambia el estilo del navegador
+  // Cambia el estilo del nav principal
   change(item : string, page? : string) : void {
 
     //Cambia de pagina en el navegador
