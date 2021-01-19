@@ -14,11 +14,13 @@ Una vez ubicada la carpeta, abrela en tu editor de código de preferencia (recom
 # Instalar paquetes requeridos
 Desde la terminal integrada del editor de código o bien sea de tu Terminal de sistema se recomienda ejecutar 
 > npm install
+
 para instalar todas las dependencias y paquetes que requiere el proyecto.
 
 # Ejecutar el proyecto
 Una vez hecho esto podemos lanzar el servidor local ejecutando 
 > ng serve
+
 para visualizar nuestro proyecto en el navegador. 
 
 # Visualizar en WEB
