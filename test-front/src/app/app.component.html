@@ -2,20 +2,19 @@
 <router-outlet></router-outlet>
 
 <!-- Contenedor padre -->
-<div id="content" style="display: flex;
-flex-direction: column;">
+<div id="content" style="display: flex; flex-direction: column;">
     <!-- Contenerdor Header -->
     <div class="bodyHeader">
         <!-- Cabecera -->
       <div class="bodyChild" style=" margin-top: 20px;">
-        <div class="row">
+        <div class="row rowMobile">
     
           <!-- Seccion 1 del header - Logo -->
-            <a class="col-xs-12 col-md-3" style="text-align: center;" href="/">
+            <a class="col-xs-12 col-md-2" style="text-align: center;" href="/">
               <img class="logo" src="../assets/images/logo.png" alt="Home" title="Home">
             </a>
           <!-- Sección 2 del header Navegador -->
-          <div class="col-xs-12 col-md-9" style="text-align: right;">
+          <div class="col-xs-12 col-md-10" style="text-align: right;">
             <div class="sec2">
               <ul>
                 <!-- Items -->
@@ -62,7 +61,7 @@ flex-direction: column;">
 
     <!-- SECCIÓN 2 -->
     <div class="bodyChild">
-      <div class="row content">
+      <div class="row content rowMobile">
         <!-- Imagen -->
         <div class="col-xs-12 col-md-5">
           <img src="../assets/images/logo2.png" alt="">
@@ -166,7 +165,7 @@ flex-direction: column;">
         <img src="../assets/images/expertise.png" width="100%" alt="">
       </div>
 
-      <div class="row" style="margin-top: 60px; text-align: center; margin-bottom: 60px;"> 
+      <div class="row rowMobile" style="margin-top: 60px; text-align: center; margin-bottom: 60px;"> 
         <div class="col-xs-12 col-md-6">
           <h5 class="title">EXPERTISE</h5>
         </div>
@@ -197,11 +196,11 @@ flex-direction: column;">
           <i class="fas fa-quote-left"></i>
         </h5>
 
-        <!-- cita -->
-        <p class="txt" style="margin-top: 37px;">This is Photoshop's version of lorem ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+        <!-- cita JANE -->
+        <blockquote class="txt" style="margin-top: 37px;">This is Photoshop's version of lorem ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500 Lorem Ipsum is simply dummy text of <br>
           the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500 Lorem Ipsum is simply 
-          dummy text of the printing and typesetting industry.</p>
+          dummy text of the printing and typesetting industry.</blockquote>
       </div>
 
       <!-- Nombre y cargo de escritora -->
@@ -219,7 +218,7 @@ flex-direction: column;">
 
     <!-- SECCIÓN 8 - Formulario -->
     <div class="bodyChild">
-      <div class="row isMobile" style="margin-top: 60px;" >
+      <div class="row rowMobile isMobile" style="margin-top: 60px;" >
         <div class="col-xs-12 col-md-6" >
           <div class="title" style="margin-bottom: 20px;"> GIVE US A GOOD NEWS</div>
 
@@ -267,9 +266,9 @@ flex-direction: column;">
       <!-- Informacion -->
     <div class="bodyChild" style=" margin-top: 20px;">
       <!-- Fila para los tres contenedores -->
-     <div class="row" style="margin-bottom: 20px;">
+     <div class="row rowMobileFooter" style="margin-bottom: 20px;">
        <!-- 1 -->
-        <div class="col-xs-12 col-md-4">
+        <div class="col-xs-12 col-md-4 rowMobileFooter">
             <!--Logo y Texto -->
           <img class="logo" src="../assets/images/logo.png" alt="Home" title="Home">
           <p class="txt txtFooter"> Loren
@@ -312,7 +311,7 @@ flex-direction: column;">
 
 
      <!-- Fila para footer final -->
-     <div class="row" style="margin-bottom: 50px;">
+     <div class="row rowMobileFooter" style="margin-bottom: 50px;">
       <div class="col-xs-12 col-md-6 sec3">
         <ul>
           <!-- Items -->
