@@ -1,3 +1,5 @@
+NOTA: Este es un proyecto Angular donde se aplican diseños Bootstrap y se trabaja con lenguaje de hoja de estilos SASS.
+
 # TAJAM1.0-WEB
 Front - Skill test
 
@@ -25,4 +27,5 @@ para visualizar nuestro proyecto en el navegador.
 
 # Visualizar en WEB
 En tu navegador preferido dirigite a la página http://localhost:4200/
+
 
