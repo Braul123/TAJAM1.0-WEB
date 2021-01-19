@@ -2,59 +2,335 @@
 <router-outlet></router-outlet>
 
 <!-- Contenedor padre -->
-<div class="bodyHeader">
-
-  <!-- Cabecera -->
-  <div class="bodyChild">
-    <div class="row">
-
-      <!-- Seccion 1 del header - Logo -->
-        <a class="col-xs-12 col-md-3" style="text-align: center;" href="#">
-          <img class="logo" src="../assets/images/logo.png" alt="Home" title="Home">
-        </a>
-      <!-- Sección 2 del header Navegador -->
-      <div class="col-xs-12 col-md-9" style="text-align: right;">
-        <div class="sec2">
-          <ul>
-            <!-- Items -->
-            <li (click)="change('home')" [ngStyle]="item =='home' && {'color': '#05dfcf'}">HOME</li>
-            <li (click)="change('about')" [ngStyle]="item =='about' && {'color': '#05dfcf'}">ABOUT</li>
-            <li (click)="change('expertise')" [ngStyle]="item =='expertise' && {'color': '#05dfcf'}">EXPERTISE</li>
-            <li (click)="change('teams')" [ngStyle]="item =='teams' && {'color': '#05dfcf'}">TEAMS</li>
-            <li (click)="change('works')" [ngStyle]="item =='works' && {'color': '#05dfcf'}">WORKS</li>
-            <li (click)="change('people')" [ngStyle]="item =='people' && {'color': '#05dfcf'}">PEOPLE SAY</li>
-            <li (click)="change('concat')" [ngStyle]="item =='concat' && {'color': '#05dfcf'}">CONCAT</li>
-          </ul>
+<div id="content" style="display: flex;
+flex-direction: column;">
+    <!-- Contenerdor Header -->
+    <div class="bodyHeader">
+        <!-- Cabecera -->
+      <div class="bodyChild" style=" margin-top: 20px;">
+        <div class="row">
+    
+          <!-- Seccion 1 del header - Logo -->
+            <a class="col-xs-12 col-md-3" style="text-align: center;" href="/">
+              <img class="logo" src="../assets/images/logo.png" alt="Home" title="Home">
+            </a>
+          <!-- Sección 2 del header Navegador -->
+          <div class="col-xs-12 col-md-9" style="text-align: right;">
+            <div class="sec2">
+              <ul>
+                <!-- Items -->
+                <li routerLink="/" (click)="change('home')" [ngStyle]="item =='home' && {'color': '#05dfcf'}"> HOME</li>
+                <li routerLink="/" (click)="change('about')" [ngStyle]="item =='about' && {'color': '#05dfcf'}">ABOUT</li>
+                <li routerLink="/" (click)="change('expertise')" [ngStyle]="item =='expertise' && {'color': '#05dfcf'}">EXPERTISE</li>
+                <li routerLink="/" (click)="change('teams')" [ngStyle]="item =='teams' && {'color': '#05dfcf'}">TEAMS</li>
+                <li routerLink="/" (click)="change('works')" [ngStyle]="item =='works' && {'color': '#05dfcf'}">WORKS</li>
+                <li routerLink="/" (click)="change('people')" [ngStyle]="item =='people' && {'color': '#05dfcf'}">PEOPLE SAY</li>
+                <li routerLink="/" (click)="change('concat')" [ngStyle]="item =='concat' && {'color': '#05dfcf'}">CONCAT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Curepo del header -->
+        <div class="content">
+          <!-- Titulo -->
+          <div  style="color: white;">
+            <h1 class="title">We Are Awesome Creative Agence</h1>
+          </div>
+    
+            <!-- separador -->
+          <hr class="line">
+    
+            <!-- Parrafo -->
+          <p class="txt" style="color: white;">This is Photoshop's version of Loren Ipsun. Proin gravida nibh vel velit auctor aliquet. Aenean solicitudin, loren <br> 
+            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate <br>
+            cursus a sit amet mauris. Morbi accumsan ipsum velit.
+          </p>
+    
+          <!-- Botón leer más -->
+          <button type="button" class="btn btn-light morebtn">LEARN MORE</button>
+    
+          <!-- scroll incons -->
+          <div style="margin-bottom: 35px;">
+            <i class="far fa-circle iconScroll" (click)="change(item,'one')" [ngStyle]="page =='one' && {'background': '#05dfcf'}"></i>
+            <i class="far fa-circle iconScroll" (click)="change(item,'two')" [ngStyle]="page =='two' && {'background-color': '#05dfcf'}"></i>
+            <i class="far fa-circle iconScroll" (click)="change(item,'three')" [ngStyle]="page =='three' && {'background-color': '#05dfcf'}"></i>
+            <i class="far fa-circle iconScroll" (click)="change(item, 'four')" [ngStyle]="page =='four' && {'background-color': '#05dfcf'}"></i>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Curepo del header -->
-    <div class="content">
-      <div class="title">
-        We Are Awesome Creative Agence
+
+    <!-- SECCIÓN 2 -->
+    <div class="bodyChild">
+      <div class="row content">
+        <!-- Imagen -->
+        <div class="col-xs-12 col-md-5">
+          <img src="../assets/images/logo2.png" alt="">
+        </div>
+        <!-- Texto -->
+        <div class="col-xs-12 col-md-7" style="text-align: left !important;">
+          
+            <h4 class="title isMobile" style="margin-bottom: 30px;">OUR STORY</h4>
+          
+            <p class="txt">This is Photoshop's version of lorem ipsum.   
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500 Lorem Ipsum is 
+              simply dummy text of the printing and typesetting industry.
+              <br><br>
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          
+            <!-- Botón leer más -->
+            <div class="isMobile">
+              <button type="button" class="btn btn-light morebtn">LEARN MORE</button>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCIÓN 3 -->
+    <div class="bodyHeader">
+      <!-- Body -->
+      <div class="bodyChild content">
+        <!-- Titulo -->
+        <div  style="color: white;">
+          <h5 class="title">MEET OUR AMAZING TEAM</h5>
+          <p class="txt">Loren ipsum dolor sit amet proin gravida nibh vel velit</p>
+        </div>
+
+          <!-- separador -->
+        <hr class="line">
+        
+        <!-- card info -->
+        <div class="row cards">
+          <!-- 1 -->
+          <div class="card cardChild">
+            <img class="card-img-top" src="../assets/images/fondo-cards.png" title="Card image/text">
+            <div class="card-body">
+              <div class="card-text">
+                <p class="title" style="color: white; margin: 0;"> SEMF UCUK</p>
+              </div>
+              <p class="paragraph"> CEO Y FOUNDER </p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="card cardChild">
+            <img class="card-img-top" src="../assets/images/fondo-cards.png" title="Card image/text">
+            <div class="card-body">
+              <div class="card-text">
+                <p class="title" style="color: white; margin: 0;"> DIK ADALIN</p>
+              </div>
+              <p class="paragraph"> ENGINEERRING </p>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="card cardChild">
+            <img class="card-img-top" src="../assets/images/fondo-cards.png" title="Card image/text">
+            <div class="card-body">
+              <div class="card-text">
+                <p class="title" style="color: white; margin: 0;"> JENG KOL</p>
+              </div>
+              <p class="paragraph"> DESIGNER </p>
+          </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="card cardChild">
+            <img class="card-img-top" src="../assets/images/fondo-cards.png" title="Card image/text">
+            <div class="card-body">
+              <div class="card-text">
+                <p class="title" style="color: white; margin: 0;"> PET ROMAK</p>
+              </div>
+              <p class="paragraph"> MARKETING </p>
+          </div>
+        </div>
       </div>
 
-        <!-- separador -->
-      <hr class="line">
+      <p style="color: white;" class="txt">Become part of our dream team, let's join us !</p>
+      </div>
+  </div>
 
-        <!-- Parrafo -->
-      <p class="txt">This is Photoshop's version of Loren Ipsun. Proin gravida nibh vel velit auctor aliquet. Aenean solicitudin, loren <br> 
-        quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate <br>
-        cursus a sit amet mauris. Morbi accumsan ipsum velit.
-      </p>
+  <!-- SECCIÓN 4 -->
+  <div class="bodyChild">
+      <!-- Titulo -->
+      <div class="content">
+        <h5 class="title">EXPERTISE</h5>
+        <p class="txt">Loren ipsum dolor sit amet proin gravida nibh vel velit</p>
+      </div>
+      <!-- Imagen EXPERTISE-->
+      <div>
+        <img src="../assets/images/expertise.png" width="100%" alt="">
+      </div>
 
-      <!-- Botón leer más -->
+      <div class="row" style="margin-top: 60px; text-align: center; margin-bottom: 60px;"> 
+        <div class="col-xs-12 col-md-6">
+          <h5 class="title">EXPERTISE</h5>
+        </div>
+        <div class="col-xs-12 col-md-6" style="text-align: center;">
+          <a class="link" href="/">See All Project in dribbble <i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+  </div>
+
+  <!-- SECCIÓN 5 Gris-->
+  <div class="bodyHeaderGrid">
+  </div>
+
+  <!-- SECCIÓN 6 - Botón -->
+  <div class="bodyChild">
+    <div class="content">
       <button type="button" class="btn btn-light morebtn">LEARN MORE</button>
+    </div>
+  </div>
 
-      <!-- scroll incons -->
-      <div style="margin-bottom: 35px;">
-        <i class="far fa-circle iconScroll" (click)="change(item,'one')" [ngStyle]="page =='one' && {'background': '#05dfcf'}"></i>
-        <i class="far fa-circle iconScroll" (click)="change(item,'two')" [ngStyle]="page =='two' && {'background-color': '#05dfcf'}"></i>
-        <i class="far fa-circle iconScroll" (click)="change(item,'three')" [ngStyle]="page =='three' && {'background-color': '#05dfcf'}"></i>
-        <i class="far fa-circle iconScroll" (click)="change(item, 'four')" [ngStyle]="page =='four' && {'background-color': '#05dfcf'}"></i>
+  <!-- SECCION 7 Parrafo -->
+  <div class="bodyHeader">
+    <!-- Body -->
+    <div class="bodyChild content" style="margin-bottom: 50px;">
+      <!-- Titulo -->
+      <div  style="color: white;">
+        <h5 class="title">
+          <i class="fas fa-quote-left"></i>
+        </h5>
+
+        <!-- cita -->
+        <p class="txt" style="margin-top: 37px;">This is Photoshop's version of lorem ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500 Lorem Ipsum is simply dummy text of <br>
+          the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500 Lorem Ipsum is simply 
+          dummy text of the printing and typesetting industry.</p>
+      </div>
+
+      <!-- Nombre y cargo de escritora -->
+      <div class="card-body" style="margin-bottom: 37px;">
+        <div class="card-text">
+          <p class="title" style="color: white; margin: 0;"> JANE GALADRIEL</p>
+        </div>
+        <p class="paragraph"> CEO TENGKUREP </p>
       </div>
       
+      <!-- Foto escritora -->
+     <img src="../assets/images/jane.png" alt="">
+    </div>
+  </div>
 
+    <!-- SECCIÓN 8 - Formulario -->
+    <div class="bodyChild">
+      <div class="row isMobile" style="margin-top: 60px;" >
+        <div class="col-xs-12 col-md-6" >
+          <div class="title" style="margin-bottom: 20px;"> GIVE US A GOOD NEWS</div>
+
+          <!-- Apertura de formulario -->
+          <form [formGroup]="usuarioForm" novalidate class="isMobileForm">
+            <!-- Nombre-->
+            <div class="form-group">
+              <input type="text" class="form-control" formControlName="name" placeholder="Name">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <input type="email" class="form-control" formControlName="email" placeholder="Email">
+            </div>
+
+            <!-- Sujeto -->
+            <div class="form-group">
+              <input type="text" class="form-control" formControlName="subject" placeholder="Subject">
+            </div>
+
+            <!-- Mensaje -->
+            <div class="form-group">
+              <textarea class="form-control" formControlName="message" rows="3" placeholder="Yout Message"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="button" class="btn btn-light morebtn btnMobileForm" (click)="send()">SUBMIT</button>
+
+          </form>
+        </div>
+        <!-- Marcas registradas -->
+        <div class="col-xs-12 col-md-6">
+          <div class="title" style="margin-bottom: 20px;"> GIVE US A GOOD NEWS</div>
+          <img src="../assets/images/marcas.png" height="80%" alt="">
+        </div>
+      </div>
+      <!-- Muestra el mensaje de envio de datos -->
+      <div class="alert alert-success" role="alert" *ngIf="isMessage">
+        Datos enviados con éxito
+      </div>
+    </div>
+
+    <!-- SECCIÓN 9 - Footer -->
+    <div class="bodyHeader">
+      <!-- Informacion -->
+    <div class="bodyChild" style=" margin-top: 20px;">
+      <!-- Fila para los tres contenedores -->
+     <div class="row" style="margin-bottom: 20px;">
+       <!-- 1 -->
+        <div class="col-xs-12 col-md-4">
+            <!--Logo y Texto -->
+          <img class="logo" src="../assets/images/logo.png" alt="Home" title="Home">
+          <p class="txt txtFooter"> Loren
+            quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+            cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+        </div>
+
+       <!-- 2 -->
+        <div class="col-xs-12 col-md-4 mobileFotter">
+          <h6 class="title" style="padding: 12px; color: white;">OUR STUDIO</h6>
+            <!-- Texto -->
+            <p class="txt txtFooter col-md-11">
+            <i class="col-md-1 fas fa-map-marker-alt"></i> Ruko cucruk, Jl. Radio luar delem jos
+            No.12 - 13, Kalideres - Jakarta Barat <br>
+            11480 - Indonesia<br><br> 
+              
+            <i class="fas fa-phone"></i> &nbsp;(+62) 21 - 2224 3333
+            </p> 
+            
+        </div>
+
+       <!-- 3 -->
+        <div class="col-xs-12 col-md-4 mobileFotter">
+          <h6 class="title" style="padding: 12px; color: white;">STAY IN TOUCH</h6>
+            <!-- Input, enviar datos -->
+            <div class="divFooterInput">
+              <input type="text" class="inputFooter text-center" placeholder="Subscribe">
+              <div class="input-group-append">
+                <button  class="btn btn-light btnFooter" (click)="send()" ><i class="far fa-paper-plane"></i> </button>
+              </div>
+            </div>
+
+            <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook iconFooter" ></i></a>
+            <a target="_blank" href="https://www.instagram.com/"><i class="fab fa-twitter-square iconFooter"></i></a>
+            <a target="_blank" href="https://myaccount.google.com/profile"><i class="fab fa-google-plus-square iconFooter"></i> </a>
+            <a target="_blank" href="https://www.youtube.com/"><i class="fab fa-youtube iconFooter"></i>   </a>
+            
+          </div>
+     </div>
+
+
+     <!-- Fila para footer final -->
+     <div class="row" style="margin-bottom: 50px;">
+      <div class="col-xs-12 col-md-6 sec3">
+        <ul>
+          <!-- Items -->
+          <li> <a style="text-decoration:none; color: white;" href="/"><span class="spanNav"> T&C</span></a></li>
+          <li> <a style="text-decoration:none; color: white;" href="/"> <span class="spanNav">HELP</span> </a></li>
+          <li> <a style="text-decoration:none; color: white;" href="/"><span class="spanNav">PRIVACITY</span> </a></li>
+        
+        </ul>
+      </div>
+      <!-- copyR.. -->
+      <div class="col-xs-12 col-md-6 copyR">
+        {{privacity}}
+      </div>
+     </div>
     </div>
   </div>
 </div>
+
+
+
+

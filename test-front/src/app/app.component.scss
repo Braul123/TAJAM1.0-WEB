@@ -5,8 +5,8 @@ $font-family: 'Times New Roman', Times, serif;
 @media (max-width : 600px){
 
     .bodyHeader{
-        width: auto;
-        position: fixed !important;
+        width: 100% !important;
+        
     }
 
     .bodyChild{
@@ -16,6 +16,46 @@ $font-family: 'Times New Roman', Times, serif;
 
     .sec2 ul{
         text-align: center !important;
+    }
+
+    .isMobile{
+        text-align: center !important;
+        margin-top: 50px !important;
+    }
+    .txt{
+        text-align: center !important;
+    }
+
+    .cards{
+        display: inline-block !important;
+        text-align: center !important;
+    }   
+
+    .card{
+        margin-bottom: 10px !important;
+
+    }
+    .isMobileForm{
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+    .btnMobileForm{
+        margin-bottom: 70px !important;
+    }
+
+    .sec3 ul li{
+        margin-bottom: 20px;
+        text-align: center !important;
+    }
+    .copyR{
+        text-align: center !important;
+    }
+    .mobileFotter{
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    .divFooterInput{
+        margin-left: 25% !important;
     }
 
 }
@@ -28,14 +68,29 @@ $font-family: 'Times New Roman', Times, serif;
 
 // Cuerpo de cabecera
 .bodyHeader {
-    background-image: url('../assets/images/fondo.jpg'); 
-    position: absolute; 
+    background-image: url('../assets/images/fondo-sec.jpeg'); 
     width: 100%;
+    text-align: justify !important;
+    float: right;
+    vertical-align: top !important;
+    
 }
+
+// Cuerpo de cabecera
+.bodyHeaderGrid {
+    background-image: url('../assets/images/fondo-gris.jpeg '); 
+    width: 100%;
+    height: 30vh;
+    text-align: justify !important;
+    float: right;
+    vertical-align: top !important;
+    
+}
+
 
 //cuerpo del header
 .bodyChild{
-    margin-top: 20px;
+   
     left: 300px;
     right: 200px;
     margin-left: 250px;
@@ -50,7 +105,7 @@ $font-family: 'Times New Roman', Times, serif;
 .sec2 ul li{
     display: inline-block;
     width: 80px;
-    text-align: center;
+    text-align: start;
     font-weight: bolder;
     color: white;
     font-size: 12px;
@@ -64,11 +119,9 @@ $font-family: 'Times New Roman', Times, serif;
    
 }
 
+//Titulos
 .title{
-    
     font-weight: bold;
-    font-size: 29px;
-    color: white;
     font-family: $font-family;
 }
 
@@ -78,24 +131,34 @@ $font-family: 'Times New Roman', Times, serif;
     border: solid 1px;
     color: #05dfcf;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 37px;
 }
 // parrafo
 .txt{
-    color: white;
-    margin-top: 37px;
     margin-bottom: 37px;
     font-family: $font-family;
 }
+.txtFooter{
+    color: white; 
+    text-align: left;
+    margin-top: 15px;
+}
 
-//BVotón leer mas 
+.paragraph{
+    margin: 0;
+    font-family: $font-family;
+    font-size: 13px;
+    color: #7d7b8a;
+}
+
+//Botón 'leer más' 
 .morebtn{
     background: #00ffff00;
     border-radius: 2px;
     border-color:  #05dfcf;
     color:  #05dfcf;
     font-weight: bold;
-    margin-bottom: 105px;
+    margin-bottom: 135px;
 }
 
 .iconScroll{
@@ -105,5 +168,72 @@ $font-family: 'Times New Roman', Times, serif;
     color: #c1c1dc;
 }
 
+.cards{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.cardChild{
+    border: 2px solid;
+    background: #ffffff00;
+    width: 13rem;
+    border-color: #e7e4ea;
+    margin-right: 30px;
+    text-align: center;
+}
 
+.link{
+    font-size: 13px;
+    color: #6f6d7f;
+}
+
+.inputFooter{
+    border: 1px solid;
+    background: #565e6500;
+    border-color: #f1f1f1a1;
+    color: white
+}
+
+.btnFooter{
+    background: #00ffff00;
+    border-color:  #05dfcf;
+    color:  #05dfcf;
+}
+
+.iconFooter{
+        margin-right: 12px;
+        cursor: pointer;
+        color: #c1c1dc;
+        font-size: 31px;
+}
+
+//Footer links navegacion
+
+.sec3 ul{
+    list-style: none;
+    margin: 0px;
+}
+.sec3 ul li{
+    display: inline-block;
+    width: 90px;
+    text-align: start;
+    font-weight: bolder;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+.spanNav:hover{
+    color: #05dfcf
+}
+
+.copyR{
+    text-align: right; 
+    color: white;
+    font-size: 13px;
+}
+
+.divFooterInput{
+    display: flex; 
+    margin-bottom: 20px;
+}
